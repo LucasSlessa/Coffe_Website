@@ -81,6 +81,10 @@ body{
     font-size: 1.6rem;
     color: #FFF;
 }
+.header .navbar.active{
+  
+    right: 0;
+}
 .header .navbar a:hover{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
@@ -106,7 +110,7 @@ body{
 }
 .header .search-form{
     position: absolute;
-    top: 115%;right: 7%;
+    top: 115%; right: 7%;
     background: #FFF;
     width: 50rem;
     height: 5rem;
@@ -115,6 +119,10 @@ body{
     transform: scaleY(0);
     transform-origin: top;
 
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
 }
 
 .header .search-form input{
@@ -146,6 +154,12 @@ body{
     padding: 0 1.5rem;
     
 }
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
+
 .header .cart-items-container .cart-item{
     position: relative;
     margin: 2rem 0;
@@ -209,13 +223,52 @@ body{
 
     }
     .header{
-        padding: 1.5rem;
+        padding: 1.5rem 2rem;
+        
     }
 
+}
 
 
+/* media queri */
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #FFF;
+      
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+}
 
 
+@media (max-width:450px){
+    html{
+        font-size: 50%;
 
-
+    }
+  
 }

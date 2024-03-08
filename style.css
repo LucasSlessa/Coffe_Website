@@ -4,10 +4,10 @@
 
 
 :root{
-    --main-color:#d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
-    --border:.1rem solid rgba(255,255,255,.3);
+    --main-color:#be996b;
+    --black:#dfccb7;
+    --bg:#f3d6b0;
+    --border:.1rem solid rgba(80, 60, 60, 0.3);
 }
 *{
    font-family: 'Roboto',sans-serif; 
@@ -38,7 +38,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #FFF;
+    background: #000000;
     border-radius: 5rem;
 
 }
@@ -53,7 +53,7 @@ section{
 
 .heading{
     text-align: center;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     padding-bottom: 3.5rem; 
     font-size: 4rem;
@@ -69,7 +69,7 @@ section{
     display: inline-block;
     padding: .9rem 3rem;
     font-size: 1.7rem;
-    color: #FFF;
+    color: #000000;
     background: var(--main-color);
     cursor: pointer;
 }
@@ -97,7 +97,10 @@ section{
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.6rem;
-    color: #FFF;
+    color: #000000;
+    font-size: 1.5rem;
+    
+
 }
 .header .navbar.active{
   
@@ -111,7 +114,7 @@ section{
 }
 
 .header .icons div{
-    color: #FFF;
+    color: #000000;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -129,7 +132,7 @@ section{
 .header .search-form{
     position: absolute;
     top: 115%; right: 7%;
-    background: #FFF;
+    background: #000000;
     width: 50rem;
     height: 5rem;
     display: flex;
@@ -168,7 +171,7 @@ section{
     top: 100%;right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: #FFF;
+    background: #3f3a3a;
     padding: 0 1.5rem;
     
 }
@@ -221,6 +224,14 @@ section{
     text-align: center;
 }
 
+.header img{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    top: 0%;
+    padding: -1rem;
+}   
+
 /* ----home----- */
 .home{
     min-height: 100vh;
@@ -229,6 +240,7 @@ section{
     background: url(banco_imagens/backgroundhome.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 
@@ -240,7 +252,7 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color: #FFF;
+    color: #ffffff;
     
 }
 
@@ -249,7 +261,7 @@ section{
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #eee;
+    color: #ffffff;
     
 }
 
@@ -280,13 +292,13 @@ section{
 }
 .about .row .content h3{
     font-size: 3rem;
-    color: #FFF;
+    color: #000000;
 
 }
 
 .about .row .content p{
     font-size: 1.6rem;
-    color: #ccc;
+    color: #3f3a3a;
     padding: 1rem 0;
     line-height: 1.8;
     
@@ -302,22 +314,76 @@ section{
     gap: 1.5rem;
 }
 
-.menu .box-container .box{
+.menu .box-container .box:nth-child(1){
     padding: 5rem;
     text-align: center;
     border: var(--border);
+    background: url(banco_imagens/menu1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     
 
 }
+.menu .box-container .box:nth-child(2){
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: url(banco_imagens/menu2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.menu .box-container .box:nth-child(3){
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: url(banco_imagens/menu3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.menu .box-container .box:nth-child(4){
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: url(banco_imagens/menu4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.menu .box-container .box:nth-child(5){
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: url(banco_imagens/menu5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+
+}
+.menu .box-container .box:nth-child(6){
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: url(banco_imagens/menu6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+
+}
+
 
 .menu .box-container .box img{
     height: 12rem;
-    
+    -webkit-filter: brightness(100%);
 }
 
 
 .menu .box-container .box h3{
-    color: #FFF;
+    color: #ffffff;
     font-size: 2rem;
     padding: 1rem 0;
 
@@ -325,7 +391,7 @@ section{
 
 
 .menu .box-container .box .price{
-    color: #FFF;
+    color: #ffffff;
     font-size: 2.5rem;
     padding: .5rem 0;
     
@@ -340,7 +406,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background: #FFF;
+    background: #00000086;
 }
 
 .menu .box-container .box:hover > *{
@@ -367,7 +433,7 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     border: var(--border);
-    color: #FFF;
+    color: #000000;
     margin: .3rem;
 }
 
@@ -387,7 +453,7 @@ section{
 
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color: #FFF;
+    color: #000000;
 }
 .products .box-container .box .content .stars{
     padding: 1.5rem;
@@ -400,7 +466,7 @@ section{
 }
 
 .products .box-container .box .content .price{
-    color: #fff;
+    color: #000000;
     font-size: 2.5rem;
 }
 .products .box-container .box .content .price span{
@@ -430,7 +496,7 @@ section{
 .review .box-container .box p{
     font-size: 1.6rem;
     line-height: 1.5;
-    color: #ccc;
+    color: #3f3a3a;
     padding: 2rem 0;
 }
 
@@ -444,7 +510,7 @@ section{
 .review .box-container .box h3{
     padding: 1rem 0;
     font-size: 2rem;
-    color: #FFF;
+    color: #000000;
 }
 
 .review .box-container .box stars i{
@@ -480,7 +546,7 @@ section{
 .contact .row form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -495,7 +561,7 @@ section{
 }
 
 .contact .row  form .inputbox span{
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -505,7 +571,7 @@ section{
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: #000000;
     text-transform: none;
     background: none;
     
@@ -553,7 +619,7 @@ section{
 .blogs .box-container .box .content .title{
     font-size: 2.5rem;
     line-height: 1.5;
-    color: #fff;
+    color: #000000;
 
     
 }
@@ -573,9 +639,67 @@ section{
 .blogs .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #ccc;
+    color: #3f3a3a;
     padding: 1rem 0;
 }
+
+.footer{
+    background: var(--black);
+    text-align: center;
+
+}
+
+.footer .share {
+    padding: 1rem 0;
+    
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000000;
+    border:var(--border);
+    margin: 3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #000000;
+    border: var(--border);
+    font-size: 2rem;
+}
+.footer .links a:hover{
+    background: var(--main-color);
+    transform: scale(1.1);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #000000;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
 
 
 
@@ -614,7 +738,7 @@ section{
         position: absolute;
         top: 100%;
         right: 100%;
-        background: #FFF;
+        background: #3f3a3a;
       
         width: 30rem;
         height: calc(100vh - 9.5rem);

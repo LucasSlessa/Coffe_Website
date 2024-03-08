@@ -226,10 +226,8 @@ section{
 
 .header img{
     position: absolute;
-    width: 10rem;
-    height: 20rem;
     top: 0%;
-    padding: -1rem;
+    padding: -2rem;
 }   
 
 /* ----home----- */
@@ -419,12 +417,17 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+   
 }
 
 .products .box-container .box{
     text-align: center;
     border: var(--border);
     padding: 2rem;
+    border-radius: 10%;
+}
+.products .box-container .box:hover{
+   background-color:#d4a464;
 }
 
 .products .box-container .box .icons a{
@@ -461,7 +464,7 @@ section{
 
 .products .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: var(--main-color);
+    color: #b17e3d;
     
 }
 
